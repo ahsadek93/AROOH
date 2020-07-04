@@ -1,0 +1,44 @@
+.bg-black {
+  background-color: black; }
+
+.color-one {
+  color: #5e2ced !important; }
+
+.btn-primary {
+  border: 1px transparent !important;
+  background-color: #5e2ced !important;
+  padding: 10px 30px;
+  margin-top: 10px;
+  box-shadow: 0 0 0 0.2rem transparent !important; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:checked, .btn-primary:target {
+    background-color: #5e2ced !important;
+    box-shadow: 0 0 0 0.2rem #5e2ced !important; }
+  .btn-primary-filled {
+    border: 1px solid black !important;
+    background-color: white !important;
+    color: black;
+    padding: 10px 30px;
+    margin-top: 10px; }
+    .btn-primary-filled:hover, .btn-primary-filled:focus {
+      border: 1px solid white !important;
+      background-color: #5e2ced !important;
+      color: white !important; }
+
+input {
+  outline: 0 !important;
+  border-width: 0 0 2px !important;
+  border-color: --muted !important; }
+  input:focus
+  input:hover, input:active, input:checked, input:target {
+    border-color: #5e2ced !important; }
+
+.form-card {
+  border: 1px solid --muted;
+  -webkit-box-shadow: 0 0 2px grey;
+  box-shadow: 0 0 2px grey;
+  border-radius: 2rem !important; }
+
+.small-text {
+  font-size: .8rem; }
+
+/*# sourceMappingURL=style.css.map */

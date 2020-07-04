@@ -1,0 +1,80 @@
+$color-one: rgb(94, 44, 237) !important;
+$color-two: rgb(204, 17, 43) !important;
+$color-two-dark:rgb(116, 4, 16)!important;
+
+
+
+.bg-black {
+    background-color: black;
+}
+
+.color-one {
+    color: $color-one;
+}
+
+.btn-primary {
+    border: 1px transparent !important;
+    background-color: $color-one;
+    padding: 10px 30px;
+    margin-top: 10px;
+    box-shadow: 0 0 0 0.2rem transparent !important;
+
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:checked,
+    &:target {
+
+        background-color: $color-one;
+        box-shadow: 0 0 0 0.2rem $color-one ;
+    }
+
+   
+
+
+
+    &-filled {
+        border: 1px solid black !important;
+        background-color: white !important;
+        color: black;
+        padding: 10px 30px;
+        margin-top: 10px;
+
+        &:hover,
+        &:focus {
+            border: 1px solid white !important;
+            background-color: $color-one;
+            color: white !important;
+        }
+    }
+}
+
+
+input {
+    outline: 0 !important;  
+    border-width: 0 0 2px !important;
+    border-color: --muted !important;
+
+    &:focus
+    &:hover,
+    &:active,
+    &:checked,
+    &:target {
+        border-color: $color-one 
+    }
+  }
+  
+
+  .form-card  {
+      border: 1px solid --muted;
+      -webkit-box-shadow: 0 0 2px grey;
+      box-shadow: 0 0 2px grey;
+      border-radius: 2rem !important;
+
+    }
+
+
+    .small-text {
+        font-size: .8rem;
+    }
