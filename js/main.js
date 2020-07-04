@@ -1,1 +1,5 @@
-$('.logSlider').slick();
+window.onload(
+    document.getElementsByClassName('logSlider').slick({
+        infinite: true
+    })
+)
