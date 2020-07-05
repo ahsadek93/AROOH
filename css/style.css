@@ -1,6 +1,9 @@
 .bg-black {
   background-color: black; }
 
+.bg-color-one {
+  background-color: #ae95f5 !important; }
+
 .color-one {
   color: #5e2ced !important; }
 
@@ -34,11 +37,53 @@ input {
 
 .form-card {
   border: 1px solid --muted;
-  -webkit-box-shadow: 0 0 2px grey;
-  box-shadow: 0 0 2px grey;
-  border-radius: 2rem !important; }
+  -webkit-box-shadow: 0 0 1.5px grey;
+  box-shadow: 0 0 1.5px grey;
+  border-radius: 1rem !important; }
 
 .small-text {
   font-size: .8rem; }
+
+.imgContainer {
+  position: relative;
+  padding-top: 30vw !important; }
+  @media (min-width: 992px) {
+    .imgContainer {
+      padding-top: 30vw !important; } }
+
+.sliderImgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem; }
+
+.sliderImg {
+  border-radius: 1.5rem; }
+
+.text-underline-one {
+  border-bottom: 3px solid #5e2ced !important; }
+
+.planCardHeader {
+  border-radius: 1rem 1rem 0rem 0rem;
+  border-color: #5e2ced !important; }
+
+.planCardFooter {
+  border-radius: 0rem 0rem 1rem 1rem;
+  border-color: #5e2ced !important; }
+
+.corner-ribbon {
+  z-index: 100;
+  width: 200px;
+  background: #5e2ced !important;
+  position: absolute;
+  top: 3%;
+  right: -32%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(35deg);
+  -webkit-transform: rotate(35deg); }
 
 /*# sourceMappingURL=style.css.map */
