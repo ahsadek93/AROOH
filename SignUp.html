@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <script src="https://kit.fontawesome.com/8ed589f1d4.js" crossorigin="anonymous"></script>
@@ -46,97 +48,129 @@
         </div>
 
     </div>
-    <div class="container mb-5 mt-0 my-md-5">
-        <div class="row justify-content-center">
-            <div class="col-11 col-md-6">
-                <div class="row logSlider">
-                    <div class="px-3 py-5 pt-md-5 pb-md-0">
-                        <div class="row">
-                            <div class="col-12 text-left my-2 my-md-0">
-                                <h6><span class="pr-3">Sign Up to</span> <span class="text-underline-one">Edit
-                                        Projects</span></h6>
-                            </div>
-                            <div class="col-12 imgContainer">
-                                <div class="sliderImgWrapper px-0 pt-0 pb-0 px-md-4 pt-md-5 pb-md-0">
-                                    <img src="./assets/sliderImg1.png" alt="sliderimg"
-                                        class="img-fluid h-100 w-100 sliderImg">
+    <v-app id="app">
+        <div class="container mb-5 mt-0 my-md-5">
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-6">
+                    <div class="row logSlider">
+                        <div class="px-3 py-5 pt-md-5 pb-md-0">
+                            <div class="row">
+                                <div class="col-12 text-left my-2 my-md-0">
+                                    <h6><span class="pr-3">Sign Up to</span> <span class="text-underline-one">Edit
+                                            Projects</span></h6>
                                 </div>
+                                <div class="col-12 imgContainer">
+                                    <div class="sliderImgWrapper px-0 pt-0 pb-0 px-md-4 pt-md-5 pb-md-0">
+                                        <img src="./assets/sliderImg1.png" alt="sliderimg"
+                                            class="img-fluid h-100 w-100 sliderImg">
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3 py-5 pt-md-5 pb-md-0">
+                            <div class="row">
+                                <div class="col-12 text-left">
+                                    <h6><span class="pr-3">Sign Up to</span><span class="text-underline-one">Add new
+                                            projcets</span></h6>
+                                </div>
+                                <div class="col-12 imgContainer">
+                                    <div class="sliderImgWrapper px-0 pt-0 pb-0 px-md-4 pt-md-5 pb-md-0">
+                                        <img src="./assets/sliderImg2.jpg" alt="sliderimg"
+                                            class="img-fluid h-100 w-100 sliderImg">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3 py-5 pt-md-5 pb-md-0">
+                            <div class="row">
+                                <div class="col-12 text-left">
+                                    <h6><span class="pr-3">Sign Up to</span> <span class="text-underline-one">Have a
+                                            Dashboard</span></h6>
+                                </div>
+                                <div class="col-12 imgContainer">
+                                    <div class="sliderImgWrapper px-0 pt-0 pb-0 px-md-4 pt-md-5 pb-md-0">
+                                        <img src="./assets/sliderImg3.jpg" alt="sliderimg"
+                                            class="img-fluid h-100 w-100 sliderImg">
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="px-3 py-5 pt-md-5 pb-md-0">
-                        <div class="row">
-                            <div class="col-12 text-left">
-                                <h6><span class="pr-3">Sign Up to</span><span class="text-underline-one">Add new
-                                        projcets</span></h6>
-                            </div>
-                            <div class="col-12 imgContainer">
-                                <div class="sliderImgWrapper px-0 pt-0 pb-0 px-md-4 pt-md-5 pb-md-0">
-                                    <img src="./assets/sliderImg2.jpg" alt="sliderimg"
-                                        class="img-fluid h-100 w-100 sliderImg">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-3 py-5 pt-md-5 pb-md-0">
-                        <div class="row">
-                            <div class="col-12 text-left">
-                                <h6><span class="pr-3">Sign Up to</span> <span class="text-underline-one">Have a
-                                        Dashboard</span></h6>
-                            </div>
-                            <div class="col-12 imgContainer">
-                                <div class="sliderImgWrapper px-0 pt-0 pb-0 px-md-4 pt-md-5 pb-md-0">
-                                    <img src="./assets/sliderImg3.jpg" alt="sliderimg"
-                                        class="img-fluid h-100 w-100 sliderImg">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div class="col-11 col-md-6 form-card border rounded p-5">
-                <h5>Create New Account!</h5>
-                <div class="mt-5 mb-2 mr-2">
-                    <p class="text-muted mb-0">Username</p>
-                    <input type="text" class="form-control">
-                </div>
+                <div class="col-11 col-md-6 form-card border rounded p-5 test">
+                    <h5>Create New Account!</h5>
+                    <div class="form-row">
+                        <v-form class="w-100">
+                            <v-container class="border-bottom">
+                                <v-row>
+                                    <v-col class="col-12 col-md-6">
+                                        <v-text-field label="First name"></v-text-field>
+                                    </v-col>
+                                    <v-col class="col-12 col-md-6">
+                                        <v-text-field label="Last name"></v-text-field>
+                                    </v-col>
+                                    <div class="col-12 py-0 my-md-0">
+                                        <v-radio-group row>
+                                            <p class="m-0 pr-2 text-muted">Gender</p>
+                                            <div class="col-12 d-md-none"></div>
+                                            <v-radio label="Male"></v-radio>
+                                            <v-radio label="Female"></v-radio>
+                                        </v-radio-group>
+                                    </div>
+                                </v-row>
+                            </v-container>
+                            <v-container class="border-bottom">
+                                <v-row>
+                                    <v-col class="col-12 col-md-6">
+                                        <v-text-field label="Email"></v-text-field>
+                                    </v-col>
+                                    <v-col class="col-12 col-md-6">
+                                        <v-text-field label="Phone Number"></v-text-field>
+                                    </v-col>
+                                    <v-col class="col-12 col-md-6">
+                                        <v-text-field label="Password" :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
+                                            :type="show1 ? 'text' : 'password'" @click:append="show1 = !show1">
+                                        </v-text-field>
+                                    </v-col>
+                                    <v-col class="col-12 col-md-6">
+                                        <v-text-field label="Confirm Password"
+                                            :append-icon="show2 ? 'mdi-eye' : 'mdi-eye-off'"
+                                            :type="show2 ? 'text' : 'password'" @click:append="show2 = !show2">
+                                        </v-text-field>
+                                    </v-col>
+                                </v-row>
+                            </v-container>
+                            <v-container>
+                                <v-row>
+                                    <v-col class="col-12 col-md-6">
+                                        <v-text-field label="Company Name"></v-text-field>
+                                    </v-col>
+                                    <v-col class="col-12 col-md-6 p-0"></v-col>
+                                    <v-col class="col-12 col-md-6">
+                                        <v-select :items="industry" label="Industry"></v-select>
+                                    </v-col>
+                                    <v-col class="col-12 col-md-6">
+                                        <v-select :items="role" label="Role"></v-select>
+                                    </v-col>
+                                    <div class="btn btn-primary">Sign In</div>
+                                    <div class="my-2 col-12 px-0">
+                                        <span class="small-text"> Have no account? </span><a href="./SignUp.html"
+                                            class="color-one">Sign
+                                            Up</a>
+                                    </div>
+                                </v-row>
+                            </v-container>
 
-                <div class="form-row my-4">
-                    <div class="mx-2">
-                        <p class="text-muted mb-0">Email</p>
-                        <input type="text" class="form-control">
                     </div>
-                    <div class="mx-2">
-                        <p class="text-muted mb-0">Phone Number</p>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
 
-                <div class="form-row my-4">
-                    <div class="mx-2">
-                        <p class="text-muted mb-0">Password</p>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="mx-2">
-                        <p class="text-muted mb-0">Confirm Password</p>
-                        <input type="text" class="form-control">
-                    </div>
                 </div>
-
-                <div class="my-5">
-                    <a href="./Plan.html" class="btn btn-primary"> Sign Up</a>
-                </div>
-
-                <div class="my-2">
-                    Have an account? <a href="./index.html" class="color-one">Sign In</a>
-                </div>
-
             </div>
         </div>
-    </div>
+    </v-app>
+
     <div class="container-fluid bg-black text-muted">
         <div class="row">
             <div class="col-12 align-self-center">
@@ -147,7 +181,8 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -159,6 +194,35 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script>
+
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify(),
+            data: {
+                show1: false,
+                show2: false,
+                industry: [
+                    'Retail',
+                    'Education',
+                    'Food and Beverage',
+                    'Entertainment',
+                    'Printing',
+                    'Advertising'
+                ],
+                role: [
+                    'Educator',
+                    'Manager',
+                    'Marketer',
+                    'Product Manager',
+                    'Sales',
+                    'Student',
+                    'Other'
+                ]
+            },
+
+        })
+    </script>
     <script src="./js/main.js"></script>
 </body>
 

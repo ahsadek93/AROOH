@@ -27,14 +27,6 @@
       background-color: #5e2ced !important;
       color: white !important; }
 
-input {
-  outline: 0 !important;
-  border-width: 0 0 2px !important;
-  border-color: --muted !important; }
-  input:focus
-  input:hover, input:active, input:checked, input:target {
-    border-color: #5e2ced !important; }
-
 .form-card {
   border: 1px solid --muted;
   -webkit-box-shadow: 0 0 1.5px grey;
@@ -85,5 +77,35 @@ input {
   color: #f0f0f0;
   transform: rotate(35deg);
   -webkit-transform: rotate(35deg); }
+
+.v-text-field > .v-input__control > .v-input__slot:after {
+  color: #5e2ced !important; }
+  .v-text-field > .v-input__control > .v-input__slot:after:focus, .v-text-field > .v-input__control > .v-input__slot:after:active, .v-text-field > .v-input__control > .v-input__slot:after:checked, .v-text-field > .v-input__control > .v-input__slot:after:target {
+    color: #5e2ced !important; }
+
+.mdi-radiobox-marked::before {
+  color: #5e2ced !important; }
+
+.v-radio label {
+  left: 3px !important;
+  top: 3px; }
+
+.v-list {
+  border: 1px solid #5e2ced !important; }
+
+.v-list-item {
+  border-bottom: 1px solid #6c757d; }
+  .v-list-item:hover {
+    background-color: #5e2ced !important;
+    color: white !important; }
+
+.theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+  color: #6c757d !important; }
+  .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled):hover {
+    color: white !important; }
+
+.test {
+  height: 80vh;
+  overflow: scroll; }
 
 /*# sourceMappingURL=style.css.map */

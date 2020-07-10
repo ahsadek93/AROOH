@@ -55,19 +55,7 @@ $color-two-dark:rgb(116, 4, 16)!important;
 }
 
 
-input {
-    outline: 0 !important;  
-    border-width: 0 0 2px !important;
-    border-color: --muted !important;
 
-    &:focus
-    &:hover,
-    &:active,
-    &:checked,
-    &:target {
-        border-color: $color-one 
-    }
-  }
   
 
   .form-card  {
@@ -134,3 +122,52 @@ input {
         transform: rotate(35deg);
         -webkit-transform: rotate(35deg);
       }
+
+
+
+      .v-text-field>.v-input__control>.v-input__slot:after{
+            color: $color-one;
+            &:focus,
+            &:active,
+            &:checked,
+            &:target{
+                color: $color-one;
+            }
+      }
+
+      .mdi-radiobox-marked::before { 
+          color: $color-one;
+      }
+
+      .v-radio label {
+          left: 3px !important;
+          top: 3px;
+      }
+
+      .v-list { 
+          border: 1px solid $color-one
+      }
+
+      .v-list-item { 
+          border-bottom: 1px solid #6c757d;
+          
+        &:hover {
+            background-color: $color-one;
+            color:white !important
+        }
+      }
+
+      .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled){
+          color: #6c757d !important;
+        &:hover {
+            color:white !important
+        }
+    }
+
+    .test {
+        height: 80vh;
+        overflow: scroll;
+    }
+
+
+    
