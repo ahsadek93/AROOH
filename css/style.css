@@ -120,17 +120,32 @@ body,
   .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled):hover {
     color: white !important; }
 
-.test::-webkit-scrollbar {
-  width: 4px; }
-.test::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
-  border-radius: 1rem; }
-.test::-webkit-scrollbar-thumb {
-  background-color: #ae95f5 !important;
-  background-clip: padding-box;
-  border-radius: 1rem; }
+/*
+    .test {
 
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+            -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+            border-radius: 1rem;
+
+        }
+
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color-one-light;
+           background-clip: padding-box;  
+           border-radius: 1rem;
+          } 
+    
+    }
+
+    */
 .fixed-slider {
   position: relative; }
   @media (min-width: 768px) {
@@ -140,5 +155,8 @@ body,
       top: 0;
       left: 0;
       height: 30vh; } }
+
+.form-container {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=style.css.map */
