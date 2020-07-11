@@ -58,9 +58,6 @@ body,
 .imgContainer {
   position: relative;
   padding-top: 30vw !important; }
-  @media (min-width: 992px) {
-    .imgContainer {
-      padding-top: 30vw !important; } }
 
 .sliderImgWrapper {
   position: absolute;
@@ -123,18 +120,25 @@ body,
   .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled):hover {
     color: white !important; }
 
-.test {
-  height: 75vh;
-  overflow-y: scroll; }
-  .test::-webkit-scrollbar {
-    width: 4px; }
-  .test::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
-    border-radius: 1rem; }
-  .test::-webkit-scrollbar-thumb {
-    background-color: #ae95f5 !important;
-    background-clip: padding-box;
-    border-radius: 1rem; }
+.test::-webkit-scrollbar {
+  width: 4px; }
+.test::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem; }
+.test::-webkit-scrollbar-thumb {
+  background-color: #ae95f5 !important;
+  background-clip: padding-box;
+  border-radius: 1rem; }
+
+.fixed-slider {
+  position: relative; }
+  @media (min-width: 768px) {
+    .fixed-slider {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      left: 0;
+      height: 30vh; } }
 
 /*# sourceMappingURL=style.css.map */
