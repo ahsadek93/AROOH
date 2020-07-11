@@ -10,11 +10,12 @@
     $(document).ready(function () {
             $('.signUpSlider').slick({
                 infinite: true,
-                autoplay: 5000,
+                autoplay: 2900,
                 dots: false,
                 arrows: false,
-                fade:true
+                fade:false
             });
         });
 
 
+ 
