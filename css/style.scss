@@ -4,6 +4,32 @@ $color-two: rgb(204, 17, 43) !important;
 $color-two-dark:rgb(116, 4, 16)!important;
 
 
+body,
+.v-application
+ {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+.v-application label.primary--text{
+        color: $color-one ;
+        caret-color: $color-one;
+
+}
+
+.mini-heading {
+    font-size: 15px;
+}
+.big-heading {
+    font-size: 20px;
+
+
+    @media (min-width: 768px) {   
+          font-size: 30px;
+    }
+
+}
+
 
 .bg-black {
     background-color: black;
@@ -165,9 +191,31 @@ $color-two-dark:rgb(116, 4, 16)!important;
     }
 
     .test {
-        height: 80vh;
-        overflow: scroll;
+        height: 75vh;
+        overflow-y: scroll;
+
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+            -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+            border-radius: 1rem;
+
+        }
+
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color-one-light;
+           background-clip: padding-box;  
+           border-radius: 1rem;
+          } 
+    
     }
+
 
 
     
