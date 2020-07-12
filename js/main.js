@@ -60,8 +60,8 @@ anime.timeline({loop: true})
     targets: '.ml9 .letter',
     translateY: ["1.1em", 0],
     translateZ: 0,
-    duration: 1000,
-    delay: (el, i) => 20 * i
+    duration: 1600,
+    delay: (el, i) => 10 * i
   }).add({
     targets: '.ml9',
     opacity: 0,
