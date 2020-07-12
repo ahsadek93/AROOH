@@ -28,7 +28,7 @@
     <div class=" container-fluid bg-black">
         <div class="container">
             <div class="navbar navbar-expand-lg ">
-                <a class="navbar-brand col-4 col-md-2" href="#">
+                <a class="navbar-brand col-3 col-md-1 p-0" href="#">
                     <img src="./assets/logo.png" alt="logo" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -53,13 +53,7 @@
     <v-app id="app">
         <div class="container mb-5 mt-0 my-md-5">
             <div class="row justify-content-center">
-
-
-
-
-
-
-                <div class="col-11 col-md-7 col-lg-8 px-1 px-md-5">
+                <div class="col-11 col-md-7 col-lg-6 px-1 px-md-5">
                     <div class="row logSlider">
                         <div class="px-3 py-5 pt-md-5 pb-md-0">
                             <div class="row">
@@ -125,36 +119,45 @@
                     </div>
                 </div>
 
+                <div class="col-11 col-md-5 col-lg-6">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-md-8 form-card border form-container p-5">
+                            <h4 class="font-weight-bold">Create New Account!</h4>
+                            <div class="form-row">
+                                <v-form class="w-100">
+                                    <v-container>
+                                        <v-row>
+                                            <div class="col-12">
+                                                <v-text-field label="Email">
+                                                </v-text-field>
+                                            </div>
+                                            <div class="col-12">
+                                                <v-text-field label="Password"
+                                                    :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
+                                                    :type="show1 ? 'text' : 'password'" @click:append="show1 = !show1">
+                                                </v-text-field>
+                                            </div>
 
-
-                <div class="col-11 col-md-5 col-lg-4 form-card border form-container p-5">
-                    <h4 class="font-weight-bold">Create New Account!</h4>
-                    <div class="form-row">
-                        <v-form class="w-100">
-                            <v-container>
-                                <v-row>
-                                    <v-text-field label="Email">
-                                    </v-text-field>
-                                    <v-text-field label="Password" :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
-                                        :type="show1 ? 'text' : 'password'" @click:append="show1 = !show1">
-                                    </v-text-field>
-                                    <div class="col-12 px-0 mx-0">
-                                        <p class="m-0 small-text color-one">
-                                            Forget Password?
-                                        </p>
-                                    </div>
-                                    <div class="col-12 px-0 mx-0 mt-0 pt-0 mt-md-5 pt-md-5">
-                                        <div class="btn btn-primary">Sign In</div>
-                                        <div class="my-2 col-12 px-0">
-                                            <span class="small-text"> Have no account? </span><a href="./SignUp.html"
-                                                class="color-one">Sign
-                                                Up</a>
-                                        </div>
-                                    </div>
-                                </v-row>
-                            </v-container>
-                        </v-form>
+                                            <div class="col-12 px-0 mx-0">
+                                                <p class="m-0 small-text color-one">
+                                                    Forget Password?
+                                                </p>
+                                            </div>
+                                            <div class="col-12 px-0 mx-0 mt-0 pt-0 mt-md-5 pt-md-5">
+                                                <div class="btn btn-primary">Sign In</div>
+                                                <div class="my-2 col-12 px-0">
+                                                    <span class="small-text"> Have no account? </span><a
+                                                        href="./SignUp.html" class="color-one">Sign
+                                                        Up</a>
+                                                </div>
+                                            </div>
+                                        </v-row>
+                                    </v-container>
+                                </v-form>
+                            </div>
+                        </div>
                     </div>
+
 
                 </div>
 
