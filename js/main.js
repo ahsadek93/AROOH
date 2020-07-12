@@ -10,7 +10,7 @@
     $(document).ready(function () {
             $('.signUpSlider').slick({
                 infinite: true,
-                autoplay: 2900,
+                autoplay: 5000,
                 dots: false,
                 arrows: false,
                 fade:false

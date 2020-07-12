@@ -232,6 +232,7 @@
         new Vue({
             el: '#app',
             vuetify: new Vuetify(),
+
             data: {
                 show1: false,
                 show2: false,
@@ -280,9 +281,9 @@
                 translateZ: 0,
                 scaleX: [0.3, 1],
                 easing: "easeOutExpo",
-                duration: 750,
+                duration: 2100,
                 offset: '-=600',
-                delay: (el, i) => 150 + 25 * i
+                // delay: (el, i) => 150 + 25 * i
             }).add({
                 targets: '.ml14',
                 opacity: 0,

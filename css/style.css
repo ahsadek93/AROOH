@@ -8,7 +8,7 @@ body,
 
 .mini-heading {
   font-size: 15px;
-  font-weight: 300; }
+  font-weight: 600; }
 
 .big-heading {
   font-size: 20px;
@@ -97,7 +97,7 @@ body,
 .v-text-field > .v-input__control > .v-input__slot:after {
   color: #5e2ced !important; }
   .v-text-field > .v-input__control > .v-input__slot:after:focus, .v-text-field > .v-input__control > .v-input__slot:after:active, .v-text-field > .v-input__control > .v-input__slot:after:checked, .v-text-field > .v-input__control > .v-input__slot:after:target {
-    color: #5e2ced !important; }
+    color: red; }
 
 .mdi-radiobox-marked::before {
   color: #5e2ced !important; }
@@ -107,7 +107,8 @@ body,
   top: 3px; }
 
 .v-list {
-  border: 1px solid #5e2ced !important; }
+  border: 1px solid #5e2ced !important;
+  font-weight: 600 !important; }
 
 .v-list-item {
   border-bottom: 1px solid #6c757d; }
@@ -115,8 +116,11 @@ body,
     background-color: #5e2ced !important;
     color: white !important; }
 
+.theme--light.v-label {
+  font-weight: 600 !important; }
+
 .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
-  color: #6c757d !important; }
+  color: #5e2ced !important !important; }
   .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled):hover {
     color: white !important; }
 
@@ -144,6 +148,7 @@ body,
           } 
     
     }
+
 
     */
 .fixed-slider {
