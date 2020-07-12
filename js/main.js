@@ -1,24 +1,18 @@
     $(document).ready(function () {
             $('.logSlider').slick({
                 infinite: true,
-                autoplay: 5000,
+                autoplay: 11000,
                 dots: false,
                 arrows: false,
                 fade:true
             });
         });
-    $(document).ready(function () {
-            $('.signUpSlider').slick({
-                infinite: true,
-                autoplay: 5000,
-                dots: false,
-                arrows: false,
-                fade:false
-            });
-        });
+ 
 
 
 
+
+        /*
 
         $('.ml14 .letters').html(function (index, html) {
             return html.replace(/\S/g, '<span class="letter">$&</span>');
@@ -50,4 +44,28 @@
                 delay: 30
             });
 
+ */
+
+
+
+
+
+        $('.ml9 .letters').html(function (index, html) {
+            return html.replace(/\S/g, '<span class="letter">$&</span>');
+        });
+
  
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 1000,
+    delay: (el, i) => 20 * i
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1600,
+    easing: "easeOutExpo",
+    delay: 0
+  });

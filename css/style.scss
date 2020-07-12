@@ -233,7 +233,7 @@ body,
     .fixed-slider {
         position: relative;
 
-        @media (min-width: 768px) { 
+        @media (min-width: 992px) { 
             position: -webkit-sticky;
             position: sticky;
             top: 0;
@@ -264,3 +264,23 @@ body,
       }
 
       
+
+      .ml9 .letter {
+        display: inline-block;
+      }
+
+      .text-wrapper {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        top: 10px; 
+
+        @media (min-width: 768px) { 
+            top:15px      
+          }
+      }
+
+
+      .ml9 {
+        position: relative;
+      }
