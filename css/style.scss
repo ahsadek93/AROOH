@@ -1,6 +1,6 @@
 $color-one: #5e2ced !important;
 $color-one-light: rgb(174,149,245) !important;
-$color-two: rgb(204, 17, 43) !important;
+$color-two: #cc112b !important;
 $color-two-dark:rgb(116, 4, 16)!important;
 
 
@@ -151,85 +151,6 @@ body,
 
 
 
-      .v-text-field>.v-input__control>.v-input__slot:after{
-            color: $color-one;
-            &:focus,
-            &:active,
-            &:checked,
-            &:target{
-                color: red;
-            }
-      }
-
-      .mdi-radiobox-marked::before { 
-          color: $color-one;
-      }
-
-      .v-radio label {
-          left: 3px !important;
-          top: 3px;
-      }
-
-      .v-list { 
-          border: 1px solid $color-one;
-          font-weight: 600 !important;
-
-      }
-
-      .v-list-item {    
-          border-bottom: 1px solid #6c757d;
-
-          
-        &:hover {
-            background-color: $color-one;
-            color:white !important
-        }
-      }
-
-      .theme--light.v-label{
-             font-weight: 600 !important;
-             
-
-      }
-
-      .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled){
-          color: $color-one !important;
-        &:hover {
-            color:white !important
-        }
-    }
-/*
-    .test {
-
-
-        &::-webkit-scrollbar {
-            width: 4px;
-        }
-
-
-        &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
-            -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
-            border-radius: 1rem;
-
-        }
-
-
-        &::-webkit-scrollbar-thumb {
-            background-color: $color-one-light;
-           background-clip: padding-box;  
-           border-radius: 1rem;
-          } 
-    
-    }
-
-
-    */
-
-
-    
-
-
     .fixed-slider {
         position: relative;
 
@@ -247,7 +168,7 @@ body,
         margin-top: 5px;
 
         @media (min-width: 768px) { 
-            margin-top: 50px;
+            margin-top: 80px;
         }
     }
     
@@ -283,4 +204,8 @@ body,
 
       .ml9 {
         position: relative;
+      }
+
+      .font-weight-600 {
+          font-weight: 600;
       }
